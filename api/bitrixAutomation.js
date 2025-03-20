@@ -1,5 +1,5 @@
 import axios from "axios";
-
+console.log("teste")
 const BITRIX_WEBHOOK_URL = "https://gnapp.bitrix24.com.br/rest/4743/mjzjde3zo2cyq0uv/";
 const API_CONVERSAO = "https://extensoapi24.vercel.app/api/convert";
 
