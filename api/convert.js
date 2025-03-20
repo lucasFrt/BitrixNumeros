@@ -1,7 +1,7 @@
 const axios = require("axios");
 
 const BITRIX_WEBHOOK_URL = "https://gnapp.bitrix24.com.br/rest/4743/mjzjde3zo2cyq0uv/";
-const API_CONVERSAO = "bitrix-numeros.vercel.app"; 
+const API_CONVERSAO = "https://extensoapi24.vercel.app/api/convert"; 
 
 // IDs dos campos personalizados
 const CAMPO_VALOR_MONETARIO = "UF_CRM_1742475683"; 
