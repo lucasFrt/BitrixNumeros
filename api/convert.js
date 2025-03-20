@@ -1,10 +1,12 @@
+import { json } from 'micro'; // Importação correta para processar JSON
+
 export default async function handler(req, res) {
   if (req.method !== "POST") {
     return res.status(405).json({ erro: "Método não permitido, use POST" });
   }
 
   try {
-    const body = await req.json(); // 🔥 Corrige o erro de "req.body undefined"
+    const body = await json(req); // 🔥 Corrige o erro de JSON não reconhecido
     const { valor } = body;
 
     if (typeof valor !== "number" || valor < 0) {
