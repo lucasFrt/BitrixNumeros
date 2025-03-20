@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios from 'axios/dist/node/axios.cjs';
 
 const BITRIX_WEBHOOK_URL = "https://gnapp.bitrix24.com.br/rest/4743/mjzjde3zo2cyq0uv/";
 const API_CONVERSAO = "https://extensoapi24.vercel.app/api/convert";
