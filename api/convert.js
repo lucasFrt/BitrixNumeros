@@ -1,12 +1,10 @@
-import { json } from 'micro'; // Importação correta para processar JSON
-
 export default async function handler(req, res) {
   if (req.method !== "POST") {
     return res.status(405).json({ erro: "Método não permitido, use POST" });
   }
 
   try {
-    const body = await json(req); // 🔥 Corrige o erro de JSON não reconhecido
+    const body = req.body; // Vercel já processa JSON automaticamente
     const { valor } = body;
 
     if (typeof valor !== "number" || valor < 0) {
